@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED3A2B8325762F570042F53A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A2B8225762F570042F53A /* AppDelegate.swift */; };
-		ED3A2B8525762F570042F53A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A2B8425762F570042F53A /* ViewController.swift */; };
+		ED3A2B8325762F570042F53A /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A2B8225762F570042F53A /* Delegate.swift */; };
+		ED3A2B8525762F570042F53A /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A2B8425762F570042F53A /* Controller.swift */; };
 		ED3A2B8725762F5A0042F53A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED3A2B8625762F5A0042F53A /* Assets.xcassets */; };
 		ED3A2B8A25762F5A0042F53A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED3A2B8825762F5A0042F53A /* Main.storyboard */; };
+		ED3A2B942576325B0042F53A /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A2B932576325B0042F53A /* Puzzle.swift */; };
+		ED3A2B9D257636540042F53A /* 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A2B9C257636540042F53A /* 1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ED3A2B7F25762F570042F53A /* Advent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Advent.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED3A2B8225762F570042F53A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED3A2B8425762F570042F53A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED3A2B8225762F570042F53A /* Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
+		ED3A2B8425762F570042F53A /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		ED3A2B8625762F5A0042F53A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED3A2B8925762F5A0042F53A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED3A2B8B25762F5A0042F53A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED3A2B8C25762F5A0042F53A /* Advent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Advent.entitlements; sourceTree = "<group>"; };
+		ED3A2B932576325B0042F53A /* Puzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle.swift; sourceTree = "<group>"; };
+		ED3A2B9C257636540042F53A /* 1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +57,24 @@
 		ED3A2B8125762F570042F53A /* Advent */ = {
 			isa = PBXGroup;
 			children = (
-				ED3A2B8225762F570042F53A /* AppDelegate.swift */,
-				ED3A2B8425762F570042F53A /* ViewController.swift */,
+				ED3A2B9B2576364C0042F53A /* Days */,
+				ED3A2B8225762F570042F53A /* Delegate.swift */,
+				ED3A2B8425762F570042F53A /* Controller.swift */,
+				ED3A2B932576325B0042F53A /* Puzzle.swift */,
 				ED3A2B8625762F5A0042F53A /* Assets.xcassets */,
 				ED3A2B8825762F5A0042F53A /* Main.storyboard */,
 				ED3A2B8B25762F5A0042F53A /* Info.plist */,
 				ED3A2B8C25762F5A0042F53A /* Advent.entitlements */,
 			);
 			path = Advent;
+			sourceTree = "<group>";
+		};
+		ED3A2B9B2576364C0042F53A /* Days */ = {
+			isa = PBXGroup;
+			children = (
+				ED3A2B9C257636540042F53A /* 1.swift */,
+			);
+			path = Days;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED3A2B8525762F570042F53A /* ViewController.swift in Sources */,
-				ED3A2B8325762F570042F53A /* AppDelegate.swift in Sources */,
+				ED3A2B9D257636540042F53A /* 1.swift in Sources */,
+				ED3A2B942576325B0042F53A /* Puzzle.swift in Sources */,
+				ED3A2B8525762F570042F53A /* Controller.swift in Sources */,
+				ED3A2B8325762F570042F53A /* Delegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +286,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Advent/Advent.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -291,7 +306,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Advent/Advent.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
