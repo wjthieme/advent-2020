@@ -21,7 +21,7 @@ extension Solvers {
     }
 }
 
-fileprivate let regex = try! NSRegularExpression(pattern: "^([0-9]{1,2})-([0-9]{1,2}) ([a-z]{1}): ([a-z]*)$", options: [.anchorsMatchLines, .caseInsensitive])
+fileprivate let regex = try! NSRegularExpression(pattern: "^([0-9]+)-([0-9]+) ([a-z]): ([a-z]+)$", options: [.anchorsMatchLines, .caseInsensitive])
 
 fileprivate func processInput(_ string: String) -> [Value] {
     let range = NSRange(location: 0, length: string.count)
@@ -58,13 +58,6 @@ fileprivate class Value {
     var isValidB: Bool {
         let firstIndex = pass.index(pass.startIndex, offsetBy: min-1)
         let secondIndex = pass.index(pass.startIndex, offsetBy: max-1)
-        return (pass[firstIndex] == letter) ^^ (pass[secondIndex] == letter)
-    }
-}
-
-infix operator ^^: LogicalConjunctionPrecedence
-extension Bool {
-    static func ^^(lhs:Bool, rhs:Bool) -> Bool {
-        return (lhs && !rhs) || (!lhs && rhs)
+        return (pass[firstIndex] == letter) != (pass[secondIndex] == letter)
     }
 }
