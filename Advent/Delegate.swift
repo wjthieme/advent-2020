@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  Delegate.swift
 //  Advent
 //
 //  Created by Wilhelm Thieme on 01/12/2020.

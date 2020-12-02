@@ -1,5 +1,5 @@
 //
-//  1.swift
+//  01.swift
 //  Advent
 //
 //  Created by Wilhelm Thieme on 01/12/2020.
@@ -7,13 +7,13 @@
 
 import Foundation
 
-let solveDay1A: Solve = { input in
+let day1aSolver: Solve = { input in
     let values = processInput(input)
     let result = sumEquals2020Multiplied(values, iterations: 2)
     return "\(result)"
 }
 
-let solveDay1B: Solve = { input in
+let day1bSolver: Solve = { input in
     let values = processInput(input)
     let result = sumEquals2020Multiplied(values, iterations: 3)
     return "\(result)"

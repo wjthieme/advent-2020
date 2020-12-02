@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  Controller.swift
 //  Advent
 //
 //  Created by Wilhelm Thieme on 01/12/2020.
@@ -63,11 +63,8 @@ class ViewController: NSViewController, NSTextViewDelegate {
         }
         
         startLoading()
-        
         workQueue.async(execute: workItem!)
-        
     }
-    
     
     private func startLoading() {
         activityIndicator.startAnimation(self)
