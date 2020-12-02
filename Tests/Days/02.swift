@@ -7,8 +7,12 @@
 
 import Foundation
 
-let day2aInput = "1-3 a: abcde\n1-3 b: cdefg\n2-9 c: ccccccccc"
-let day2aOutput = "2"
+extension Inputs {
+    static let day2a = "1-3 a: abcde\n1-3 b: cdefg\n2-9 c: ccccccccc"
+    static let day2b = day2a
+}
 
-let day2bInput = day2aInput
-let day2bOutput = "1"
+extension Outputs {
+    static let day2a = "2"
+    static let day2b = "1"
+}

@@ -7,16 +7,18 @@
 
 import Foundation
 
-let day2aSolver: Solve = { input in
-    let values = processInput(input)
-    let valid = values.filter { $0.isValid2a }
-    return "\(valid.count)"
-}
-
-let day2bSolver: Solve = { input in
-    let values = processInput(input)
-    let valid = values.filter { $0.isValid2b }
-    return "\(valid.count)"
+extension Solvers {
+    @objc static let day2a: Solve = { input in
+        let values = processInput(input)
+        let valid = values.filter { $0.isValidA }
+        return "\(valid.count)"
+    }
+    
+    @objc static let day2b: Solve = { input in
+        let values = processInput(input)
+        let valid = values.filter { $0.isValidB }
+        return "\(valid.count)"
+    }
 }
 
 fileprivate let regex = try! NSRegularExpression(pattern: "^([0-9]{1,2})-([0-9]{1,2}) ([a-z]{1}): ([a-z]*)$", options: [.anchorsMatchLines, .caseInsensitive])
@@ -48,12 +50,12 @@ fileprivate class Value {
         pass = String(original[passRange])
     }
     
-    var isValid2a: Bool {
+    var isValidA: Bool {
         let filtered = pass.filter { $0 == letter }
         return range.contains(filtered.count)
     }
     
-    var isValid2b: Bool {
+    var isValidB: Bool {
         let firstIndex = pass.index(pass.startIndex, offsetBy: min-1)
         let secondIndex = pass.index(pass.startIndex, offsetBy: max-1)
         return (pass[firstIndex] == letter) ^^ (pass[secondIndex] == letter)

@@ -7,8 +7,13 @@
 
 import Foundation
 
-let day1aInput = "1721\n979\n366\n299\n675\n1456"
-let day1aOutput = "514579"
+extension Inputs {
+    static let day1a = "1721\n979\n366\n299\n675\n1456"
+    static let day1b = day1a
+}
 
-let day1bInput = day1aInput
-let day1bOutput = "241861950"
+extension Outputs {
+    static let day1a = "514579"
+    static let day1b = "241861950"
+}
+

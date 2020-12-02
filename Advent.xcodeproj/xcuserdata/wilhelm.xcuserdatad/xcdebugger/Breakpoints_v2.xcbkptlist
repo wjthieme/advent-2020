@@ -158,8 +158,8 @@
             filePath = "Advent/Days/02.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "processInput(_:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -174,74 +174,26 @@
             filePath = "Advent/Days/02.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "isValid2b"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "isValidB"
             landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D1B392F9-227B-4B63-8CE6-27C5F5EF641D"
+            uuid = "2AFA2B68-C6C3-4AE4-89CF-3B28036B049A"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Advent/Days/02.swift"
+            filePath = "Advent/Puzzle.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "unknown"
-            landmarkType = "0">
-            <Locations>
-               <Location
-                  uuid = "D1B392F9-227B-4B63-8CE6-27C5F5EF641D - 3fc741f81fc5b35d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.String) -&gt; Swift.String in variable initialization expression of Advent.day2bSolver : (Swift.String) -&gt; Swift.String"
-                  moduleName = "Advent"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wilhelm/XcodeProjects/Advent/Advent/Days/02.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "81">
-               </Location>
-               <Location
-                  uuid = "D1B392F9-227B-4B63-8CE6-27C5F5EF641D - 1562269b0f5ed635"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Advent.(Value in _02A193A3426DF6B285C78BB4B235FEEB)) -&gt; Swift.Bool in closure #1 (Swift.String) -&gt; Swift.String in variable initialization expression of Advent.day2bSolver : (Swift.String) -&gt; Swift.String"
-                  moduleName = "Advent"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wilhelm/XcodeProjects/Advent/Advent/Days/02.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "19">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B953591A-A418-4BBF-B8C0-ECD2F2971DE9"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Advent/Days/02.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "solve(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

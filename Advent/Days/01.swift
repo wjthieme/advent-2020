@@ -7,16 +7,18 @@
 
 import Foundation
 
-let day1aSolver: Solve = { input in
-    let values = processInput(input)
-    let result = sumEquals2020Multiplied(values, iterations: 2)
-    return "\(result)"
-}
-
-let day1bSolver: Solve = { input in
-    let values = processInput(input)
-    let result = sumEquals2020Multiplied(values, iterations: 3)
-    return "\(result)"
+extension Solvers {
+    @objc static let day1a: Solve = { input in
+        let values = processInput(input)
+        let result = sumEquals2020Multiplied(values, iterations: 2)
+        return "\(result)"
+    }
+    
+    @objc static let day1b: Solve = { input in
+        let values = processInput(input)
+        let result = sumEquals2020Multiplied(values, iterations: 3)
+        return "\(result)"
+    }
 }
 
 fileprivate func processInput(_ string: String) -> [Int] {

@@ -9,23 +9,9 @@ import Foundation
 import Advent
 
 extension Puzzle {
-    
-    var testInput: String {
-        switch self {
-        case .day1a: return day1aInput
-        case .day1b: return day1bInput
-        case .day2a: return day2aInput
-        case .day2b: return day2bInput
-        }
-    }
-    
-    
-    var expectedTestOutput: String {
-        switch self {
-        case .day1a: return day1aOutput
-        case .day1b: return day1bOutput
-        case .day2a: return day2aOutput
-        case .day2b: return day2bOutput
-        }
-    }
+    var testInput: String { return Inputs.value(forKey: rawValue) as? String ?? "" }
+    var expectedTestOutput: String { return Outputs.value(forKey: rawValue) as? String ?? "0" }
 }
+
+class Inputs: NSObject { override static func value(forUndefinedKey key: String) -> Any? { return nil } }
+class Outputs: NSObject { override static func value(forUndefinedKey key: String) -> Any? { return nil } }
