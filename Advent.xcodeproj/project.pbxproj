@@ -62,6 +62,10 @@
 		ED3A2C382577805A0042F53A /* 25.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A2C232577805A0042F53A /* 25.swift */; };
 		ED3A2C392577805A0042F53A /* 18.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A2C242577805A0042F53A /* 18.swift */; };
 		ED3A2C3A2577805A0042F53A /* 24.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A2C252577805A0042F53A /* 24.swift */; };
+		EDA71E03257801F3009729DF /* 20.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA71E02257801F3009729DF /* 20.swift */; };
+		EDA71E072578030D009729DF /* 10.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA71E062578030D009729DF /* 10.swift */; };
+		EDA71E0B257803D8009729DF /* 10.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA71E0A257803D8009729DF /* 10.swift */; };
+		EDA71E0F25780435009729DF /* 20.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA71E0E25780435009729DF /* 20.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +139,10 @@
 		ED3A2C232577805A0042F53A /* 25.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 25.swift; sourceTree = "<group>"; };
 		ED3A2C242577805A0042F53A /* 18.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 18.swift; sourceTree = "<group>"; };
 		ED3A2C252577805A0042F53A /* 24.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 24.swift; sourceTree = "<group>"; };
+		EDA71E02257801F3009729DF /* 20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20.swift; sourceTree = "<group>"; };
+		EDA71E062578030D009729DF /* 10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10.swift; sourceTree = "<group>"; };
+		EDA71E0A257803D8009729DF /* 10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10.swift; sourceTree = "<group>"; };
+		EDA71E0E25780435009729DF /* 20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +210,7 @@
 				ED3A2BF02577803A0042F53A /* 07.swift */,
 				ED3A2BF42577803A0042F53A /* 08.swift */,
 				ED3A2BF62577803A0042F53A /* 09.swift */,
+				EDA71E0A257803D8009729DF /* 10.swift */,
 				ED3A2BF82577803A0042F53A /* 11.swift */,
 				ED3A2BF72577803A0042F53A /* 12.swift */,
 				ED3A2BF92577803A0042F53A /* 13.swift */,
@@ -211,6 +220,7 @@
 				ED3A2BF32577803A0042F53A /* 17.swift */,
 				ED3A2BEF2577803A0042F53A /* 18.swift */,
 				ED3A2BFB2577803B0042F53A /* 19.swift */,
+				EDA71E0E25780435009729DF /* 20.swift */,
 				ED3A2BEE2577803A0042F53A /* 21.swift */,
 				ED3A2BF52577803A0042F53A /* 22.swift */,
 				ED3A2BF12577803A0042F53A /* 23.swift */,
@@ -243,6 +253,7 @@
 				ED3A2C1F2577805A0042F53A /* 07.swift */,
 				ED3A2C162577805A0042F53A /* 08.swift */,
 				ED3A2C132577805A0042F53A /* 09.swift */,
+				EDA71E062578030D009729DF /* 10.swift */,
 				ED3A2C1B2577805A0042F53A /* 11.swift */,
 				ED3A2C182577805A0042F53A /* 12.swift */,
 				ED3A2C172577805A0042F53A /* 13.swift */,
@@ -252,6 +263,7 @@
 				ED3A2C1C2577805A0042F53A /* 17.swift */,
 				ED3A2C242577805A0042F53A /* 18.swift */,
 				ED3A2C1D2577805A0042F53A /* 19.swift */,
+				EDA71E02257801F3009729DF /* 20.swift */,
 				ED3A2C222577805A0042F53A /* 21.swift */,
 				ED3A2C122577805A0042F53A /* 22.swift */,
 				ED3A2C212577805A0042F53A /* 23.swift */,
@@ -380,8 +392,10 @@
 				ED3A2C092577803B0042F53A /* 12.swift in Sources */,
 				ED3A2BC92576996F0042F53A /* TextField.swift in Sources */,
 				ED3A2C022577803B0042F53A /* 07.swift in Sources */,
+				EDA71E0B257803D8009729DF /* 10.swift in Sources */,
 				ED3A2BD62576A9040042F53A /* 02.swift in Sources */,
 				ED3A2C0D2577803B0042F53A /* 19.swift in Sources */,
+				EDA71E0F25780435009729DF /* 20.swift in Sources */,
 				ED3A2BE025777F960042F53A /* 03.swift in Sources */,
 				ED3A2BE825777FA50042F53A /* 05.swift in Sources */,
 				ED3A2BFF2577803B0042F53A /* 14.swift in Sources */,
@@ -415,7 +429,9 @@
 				ED3A2C312577805A0042F53A /* 17.swift in Sources */,
 				ED3A2BA9257682380042F53A /* Tests.swift in Sources */,
 				ED3A2C2E2577805A0042F53A /* 03.swift in Sources */,
+				EDA71E072578030D009729DF /* 10.swift in Sources */,
 				ED3A2C282577805A0042F53A /* 09.swift in Sources */,
+				EDA71E03257801F3009729DF /* 20.swift in Sources */,
 				ED3A2C392577805A0042F53A /* 18.swift in Sources */,
 				ED3A2C342577805A0042F53A /* 07.swift in Sources */,
 				ED3A2C272577805A0042F53A /* 22.swift in Sources */,

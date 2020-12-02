@@ -1,6 +1,6 @@
 //
 //  02.swift
-//  Tests
+//  Advent
 //
 //  Created by Wilhelm Thieme on 01/12/2020.
 //
