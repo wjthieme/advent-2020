@@ -16,7 +16,7 @@ extension Solvers {
     
     @objc static let day3b: Solve = { input in
         let values = processInput(input)
-        let factors: [(Double, Double)] = [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]
+        let factors = [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]
         let counts = factors.map { slopeRun(values, xFactor: $0, yFactor: $1) }
         let multiplied = counts.reduce(1, *)
         return "\(multiplied)"
@@ -28,10 +28,10 @@ fileprivate func processInput(_ string: String) -> [[Character]] {
     return lines.map { $0.map { $0 } }
 }
 
-fileprivate func slopeRun(_ slope: [[Character]], xFactor: Double, yFactor: Double) -> Int {
+fileprivate func slopeRun(_ slope: [[Character]], xFactor: Int, yFactor: Int) -> Int {
     var counter = 0
-    for y in stride(from: 0, to: slope.count, by: Int(yFactor)) {
-        let x = Int(Double(y)*xFactor/yFactor) % slope[y].count
+    for y in stride(from: 0, to: slope.count, by: yFactor) {
+        let x = Int(Double(y*xFactor)/Double(yFactor)) % slope[y].count
         if slope[y][x] == "#" { counter += 1 }
     }
     return counter
