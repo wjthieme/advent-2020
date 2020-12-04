@@ -10,32 +10,14 @@ import Foundation
 extension Solvers {
     @objc static let day4a: Solve = { input in
         let values = processInput(input)
-        var counter = 0
-        for value in values {
-            var valid = true
-            for field in PassportFields.allCases {
-                if !field.validA(string: value) {
-                    valid = false
-                }
-            }
-            if valid { counter += 1 }
-        }
-        return "\(counter)"
+        let valid = values.filter { PassportFields.validA(string: $0) }
+        return "\(valid.count)"
     }
     
     @objc static let day4b: Solve = { input in
         let values = processInput(input)
-        var counter = 0
-        for value in values {
-            var valid = true
-            for field in PassportFields.allCases {
-                if !field.validB(string: value) {
-                    valid = false
-                }
-            }
-            if valid { counter += 1 }
-        }
-        return "\(counter)"
+        let valid = values.filter { PassportFields.validB(string: $0) }
+        return "\(valid.count)"
     }
 }
 
@@ -54,12 +36,30 @@ fileprivate enum PassportFields: String, CaseIterable {
     case passId = "pid"
     case countryId = "cid"
     
-    func validA(string: String) -> Bool {
+    static func validA(string: String) -> Bool {
+        for field in PassportFields.allCases {
+            if !field.validA(string: string) {
+                return false
+            }
+        }
+        return true
+    }
+    
+    static func validB(string: String) -> Bool {
+        for field in PassportFields.allCases {
+            if !field.validB(string: string) {
+                return false
+            }
+        }
+        return true
+    }
+    
+    private func validA(string: String) -> Bool {
         if self == .countryId { return true }
         return string.contains(rawValue)
     }
     
-    func validB(string: String) -> Bool {
+    private func validB(string: String) -> Bool {
         if self == .countryId { return true }
         if !string.contains(rawValue) { return false }
         
