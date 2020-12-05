@@ -8,11 +8,11 @@
 import Foundation
 
 extension Inputs {
-    static let day20a = ""
-    static let day20b = day20a
+    @objc static let day20a = ""
+    @objc static let day20b = day20a
 }
 
 extension Outputs {
-    static let day20a = "0"
-    static let day20b = "0"
+    @objc static let day20a = "0"
+    @objc static let day20b = "0"
 }
