@@ -22,9 +22,9 @@ extension Solvers {
 }
 
 fileprivate func mayContain(_ rules: Rules, bag: String) -> Set<String> {
-    let mayContainDirectly = Set(rules.filter { $0.value[bag] != nil }.keys)
-    let mayContainIndirectly = mayContainDirectly.map { mayContain(rules, bag: $0) }
-    return mayContainIndirectly.reduce(into: mayContainDirectly) {  $0 = $0.union($1) }
+    let direct = Set(rules.filter { $0.value[bag] != nil }.keys)
+    let indirect = direct.map { mayContain(rules, bag: $0) }
+    return indirect.reduce(into: direct) {  $0 = $0.union($1) }
 }
 
 fileprivate func bagsInside(_ rules: Rules, bag: String) -> Int {
