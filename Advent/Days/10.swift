@@ -49,9 +49,9 @@ fileprivate func calculatePaths(_ groups: [[Int]]) -> Int {
     var paths = 1
     for group in groups {
         switch group.count {
-        case 3: paths *= 2
-        case 4: paths *= 4
-        case 5: paths *= 7
+        case 3: paths *= 2 //2,1,1      -> 2 paths
+        case 4: paths *= 4 //3,2,1,1    -> 4 paths
+        case 5: paths *= 7 //3,3,2,1,1  -> 7 paths
         default: break
         }
     }
