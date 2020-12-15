@@ -33,7 +33,6 @@ extension Solvers {
             }
             factor *= value
         }
-        
         return "\(counter)"
     }
 }
