@@ -139,6 +139,7 @@
 		ED3A2C232577805A0042F53A /* 25.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 25.swift; sourceTree = "<group>"; };
 		ED3A2C242577805A0042F53A /* 18.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 18.swift; sourceTree = "<group>"; };
 		ED3A2C252577805A0042F53A /* 24.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 24.swift; sourceTree = "<group>"; };
+		ED55B80E258B8AA200E926F9 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		EDA71E02257801F3009729DF /* 20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20.swift; sourceTree = "<group>"; };
 		EDA71E062578030D009729DF /* 10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10.swift; sourceTree = "<group>"; };
 		EDA71E0A257803D8009729DF /* 10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10.swift; sourceTree = "<group>"; };
@@ -169,6 +170,7 @@
 				ED3A2B8125762F570042F53A /* Advent */,
 				ED3A2BA7257682380042F53A /* Tests */,
 				ED3A2B8025762F570042F53A /* Products */,
+				ED55B80D258B8AA200E926F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -271,6 +273,14 @@
 				ED3A2C232577805A0042F53A /* 25.swift */,
 			);
 			path = Days;
+			sourceTree = "<group>";
+		};
+		ED55B80D258B8AA200E926F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED55B80E258B8AA200E926F9 /* Accelerate.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
