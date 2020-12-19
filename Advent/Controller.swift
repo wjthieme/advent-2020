@@ -87,8 +87,8 @@ class ViewController: NSViewController, NSTextViewDelegate {
     
     private func stopLoading() {
         let diff = mach_absolute_time() - prevTime
-        let nanos = Double(diff * UInt64(timebaseInfo.numer)) / Double(timebaseInfo.denom) * 1e-9
-        timeLabel.stringValue = String(format: "%.2fs", nanos)
+        let sec = Double(diff * UInt64(timebaseInfo.numer)) / Double(timebaseInfo.denom) * 1e-9
+        timeLabel.stringValue = String(format: "%.2fs", sec)
         
         NSAnimationContext.runAnimationGroup { [self] context in
             context.duration = 0.5
